@@ -2,7 +2,7 @@ kohana-alipay
 =============
 
 kohana alipay module
-
+```
 $param = array(
     'service' => Alipay_Service::DIRECT,
     'partner' => $this->_partner,
@@ -17,7 +17,7 @@ $param = array(
     "receive_name" => $data['order']->contact_username,
     "receive_mobile" => $data['order']->contact_cellphone,
 );
-
 $form_html = Alipay_Service::instance($param, $this->_key)->build_form();
 
 $this->response->body($form_html);
+```
